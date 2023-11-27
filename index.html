@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Assignment 1 FED</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <span class="logo">
+                <img id="logo_img" src="Media/LogoFinal(white).png" height="70">
+            </span>
+            <!-- Only for mobile view to appear -->
+            <div class="menu">  
+                <a href=# onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </div>
+            <div class="navigation-dropdown">
+                <div id="blankspace_logo"></div>
+                <!-- navigation-flex is to group all the individual navigation containers so as to be able to style them -->
+                <div class="navigation-flex">
+                    <!-- navigation-container represents each navigation link -->
+                    <a href="#">
+                    <div class="navigation-container">
+                        <img src="Media/VehiclePic.png" width="200" height="100">
+                        <p><b>Vehicles</b></p>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="navigation-container">
+                            <img src="Media/LightningMcQueen.png" width="200" height="100">
+                            <p><b>Vehicles</b></p>
+                        </div>
+                        </a>
+                    <a href="#">
+                        <div class="navigation-container">
+                            <img src="Media/LightningMcQueen.png" width="200" height="100">
+                            <p><b>Vehicles</b></p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="navigation-container">
+                            <img src="Media/LightningMcQueen.png" width="200" height="100">
+                            <p><b>Vehicles</b></p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="navigation-container">
+                            <img src="Media/LightningMcQueen.png" width="200" height="100">
+                            <p><b>Vehicles</b></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li><a href=# class="links">Home</a></li>
+                <li><a href=# class="links">Vehicles</a></li>
+                <li><a href=# class="links">Location</a></li>
+                <li><a href=# class="links">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="overallContainer">
+        <div class="containerTop">
+            <!-- Background video Loop-->
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="Media/Home Background Video.mp4" type="video/mp4">
+            </video>
+            <!-- Overall navigation -->
+            <!-- Buttons and information about car -->
+            <div class="contentTop">
+                <h1 id="home-title">Mclaren P1</h1>
+                <button class="OrderNow" role="button">Order Now</button>
+                <button onclick="document.location='discovermore.html'" class="DiscoverMore" role="button">Discover More</button>
+            </div>
+        </div>
+        <div class="containerMiddle">
+            <div class="contentMiddle">
+                <p class="latestRelease">Latest Release</p>
+                <section class="sliderContainer">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide-1" src="media/Slide1.png" alt='slide-1'>
+                            <img id="slide-2" src="media/Slide2.png" alt='slide-2'>
+                            <img id="slide-3" src="media/Slide3.png" alt='slide-3'>
+                            <img id="slide-4" src="media/Slide4.png" alt='slide-4'>
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                            <a href="#slide-4"></a>
+                        </div>
+                        <button onclick="document.location='DiscoverMore.html'" class="DiscoverMore" role="button">Discover More</button>
+                    </div>
+                </section>
+                <
+            </div> 
+        </div>
+        <div class="containerBottom"></div>
+        <footer></footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
