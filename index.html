@@ -13,7 +13,7 @@
     <div class="navigation">
         <div class="header">
             <span class="logo">
-                <img id="logo_img" src="Media/LogoFinal(white).png" height="70">
+                <a href="index.html"><img id="logo_img" src="Media/LogoFinal(white).png" height="70"></a>
             </span>
             <!-- Only for mobile view to appear -->
             <div class="menu">  
@@ -24,46 +24,52 @@
                 <!-- navigation-flex is to group all the individual navigation containers so as to be able to style them -->
                 <div class="navigation-flex">
                     <!-- navigation-container represents each navigation link -->
-                    <a href="#">
+                    <a href="index.html">
+                        <div class="navigation-container">
+                            <img src="Media/IndexIcon.png" width="130" height="100">
+                            <p><b>Home</b></p>
+                        </div>
+                    </a>
+                    <a href="discovermore-page.html">
                     <div class="navigation-container">
-                        <img src="Media/VehiclePic.png" width="200" height="100">
+                        <img src="Media/VehicleIcon.jpg" width="130" height="100">
                         <p><b>Vehicles</b></p>
                     </div>
                     </a>
-                    <a href="#">
+                    <a href="testdrive-page.html">
                         <div class="navigation-container">
-                            <img src="Media/LightningMcQueen.png" width="200" height="100">
-                            <p><b>Vehicles</b></p>
+                            <img src="Media/Test-Drive.jpg" width="130" height="100">
+                            <p><b>Test Drive</b></p>
                         </div>
                         </a>
-                    <a href="#">
+                    <a href="location-page.html">
                         <div class="navigation-container">
-                            <img src="Media/LightningMcQueen.png" width="200" height="100">
-                            <p><b>Vehicles</b></p>
+                            <img src="Media/Location-Icon.png" width="200" height="100">
+                            <p><b>Location</b></p>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="aboutus-page.html">
                         <div class="navigation-container">
-                            <img src="Media/LightningMcQueen.png" width="200" height="100">
-                            <p><b>Vehicles</b></p>
+                            <img src="Media/AboutUs.png" width="200" height="100">
+                            <p><b>About Us</b></p>
                         </div>
                     </a>
-                    <a href="#">
-                        <div class="navigation-container">
-                            <img src="Media/LightningMcQueen.png" width="200" height="100">
-                            <p><b>Vehicles</b></p>
-                        </div>
-                    </a>
+                </div>
+                <div class="social-media">
+                    <a>Contact Us</a>
+                    <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
+                    <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
                 </div>
             </div>
         </div>
         <nav>
             <ul class="sidebar">
                 <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                <li><a href=# class="links">Home</a></li>
-                <li><a href=# class="links">Vehicles</a></li>
-                <li><a href=# class="links">Location</a></li>
-                <li><a href=# class="links">About Us</a></li>
+                <li><a href="index.html" class="links">Home</a></li>
+                <li><a href="vehicle-page.html" class="links">Vehicles</a></li>
+                <li><a href="location-page.html" class="links">Location</a></li>
+                <li><a href="aboutus-page.html" class="links">About Us</a></li>
             </ul>
         </nav>
     </div>
@@ -87,25 +93,101 @@
                 <section class="sliderContainer">
                     <div class="slider-wrapper">
                         <div class="slider">
-                            <img id="slide-1" src="media/Slide1.png" alt='slide-1'>
-                            <img id="slide-2" src="media/Slide2.png" alt='slide-2'>
-                            <img id="slide-3" src="media/Slide3.png" alt='slide-3'>
-                            <img id="slide-4" src="media/Slide4.png" alt='slide-4'>
+                            <img id="slide-1" src="media/Slide1.png" alt='slide-1' draggable="false">
+                            <img id="slide-2" src="media/Slide2.png" alt='slide-2' draggable="false">
+                            <img id="slide-3" src="media/Slide3.png" alt='slide-3' draggable="false">
+                            <img id="slide-4" src="media/Slide4.png" alt='slide-4' draggable="false">
                         </div>
+                        <svg id="swipe-left" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M473-80q-24 0-46-9t-39-26L184-320l30-31q16-16 37.5-21.5t42.5.5l66 19v-327q0-17 11.5-28.5T400-720q17 0 28.5 11.5T440-680v433l-97-27 102 102q5 5 12.5 8.5T473-160h167q33 0 56.5-23.5T720-240v-160q0-17 11.5-28.5T760-440q17 0 28.5 11.5T800-400v160q0 66-47 113T640-80H473Zm7-280v-160q0-17 11.5-28.5T520-560q17 0 28.5 11.5T560-520v160h-80Zm120 0v-120q0-17 11.5-28.5T640-520q17 0 28.5 11.5T680-480v120h-80ZM80-680v-200h60v81q72-59 159-90t181-31q146 0 258 67t142 173h-63q-38-84-128.5-132T480-860q-88 0-169 31t-147 89h116v60H80Zm500 400Z"/></svg>
                         <div class="slider-nav">
                             <a href="#slide-1"></a>
                             <a href="#slide-2"></a>
                             <a href="#slide-3"></a>
                             <a href="#slide-4"></a>
                         </div>
-                        <button onclick="document.location='DiscoverMore.html'" class="DiscoverMore" role="button">Discover More</button>
                     </div>
                 </section>
-                <
+                <div class="buttonSection">
+                    <button class="OrderNow" role="button">Order Now</button>
+                    <button onclick="document.location='DiscoverMore.html'" class="DiscoverMore" role="button">Discover More</button>
+                </div>
             </div> 
         </div>
-        <div class="containerBottom"></div>
-        <footer></footer>
+        <div class="containerBottom">
+            <div class="containerBottom-header">
+                <h1>Car Types</h1>
+                <p>Learn about car types to find the right one for you.</p>
+            </div>
+
+<!-- Sports Car Type Information -->
+            <section class="cartype-container">
+                <article class="cartype-box">
+                    <div id="cartype-img">
+                        <img src="wk01-pic.jpg" alt="Web Developer Image">
+                    </div>
+                    <div class="cartype-content">
+                        <a href="wk01.html" id="cartype-title">Introduction to Front-End Development</a>
+                        <p>Summary: I've learned about the importance of semantic HTML elements, non-technical considerations for file naming, and technical details related to HTML and CSS, including specific HTML elements and CSS styling techniques.</p>
+                        <a href="wk01.html" id="explore-more">
+                            Read More
+                            <img src="Media/right arrow icon.png" width='10' id="right-arrow">
+                        </a>
+                    </div>
+                </article>
+                
+        
+        
+<!-- Liftback Car Type Information -->
+        <!------------------------------------------------------------------------------------------------------------------------>
+                <article class="cartype-box">
+                    <div id="cartype-img">
+                        <img src="Media/Slide2.png" alt="Web Developer Image" width="414" height="244">
+                    </div>
+                    <div class="cartype-content">
+                        <a href="wk02.html" id="cartype-title">SEMANTIC <br>HTML</a>
+                        <p>Summary: I have learned about the production process for interactive experience projects, the roles and responsibilities of interactive developers/designers in project teams, and the profession of web design. I've also gained a solid understanding of web design fundamentals and moreover, I can now understand and create HTML documents, a fundamental skill in website development. </p>
+                        <a href="wk02.html" id="explore-more">
+                            Read More
+                            <img src="Media/right arrow icon.png" width='10' id="right-arrow">
+                        </a>
+                    </div>
+                </article>
+        
+        
+<!-- SUV Car Type Information -->
+        <!------------------------------------------------------------------------------------------------------------------------>
+                <article class="cartype-box">
+                    <div id="cartype-img">
+                        <img src="wk03-pic.jpg" alt="Web Developer Image">
+                    </div>
+                    <div class="cartype-content">
+                        <a href="wk03.html" id="cartype-title">More CSS | Media Queries | Flex</a>
+                        <p>Summary: I have learned about the production process for interactive experience projects, the roles and responsibilities of interactive developers/designers in project teams, and the profession of web design. I've also gained a solid understanding of web design fundamentals and moreover, I can now understand and create HTML documents, a fundamental skill in website development. </p>
+                        <a href="wk03.html" id="explore-more">
+                            Read More
+                            <img src="Media/right arrow icon.png" width='10' id="right-arrow">
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <p id="footer-title">Singapore</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
+                    <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.np.edu.sg/terms-of-use">Terms of Use</a>
+                    <a href="https://www.np.edu.sg/privacy-statement">Privacy & Legal</a>
+                    <p href="contact-us.html">Contact Us</p>
+                </div>
+                <p class="copyright">Copyright © 2023 Ngee Ann Polytechnic</p>
+                <p class="copyright">All Rights Reserved</p>
+            </div>
+        </footer>
     </div>
     <script src="index.js"></script>
 </body>
