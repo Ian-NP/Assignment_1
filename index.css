@@ -76,7 +76,7 @@ a{
 .logo {
     width: 100%;
     padding: 20px;
-    padding-right: 30px;
+    padding-right: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +264,7 @@ a{
     position: relative;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 83%;
+    top: 80%;
     text-align: center;
     color: white;
 }
@@ -272,14 +272,15 @@ a{
 #home-title{
     font-size: 50px;
     font-weight: normal;
-    margin: 10px;
+    margin: 30px;
+    color: rgba(255,255,255,0.9)
 }
 
 .contentTop button{
     margin-bottom: 10px;
 }
 
-.DiscoverMore {
+.button-style {
     align-items: center;
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -306,60 +307,21 @@ a{
     width: 200px;
   }
   
-  .DiscoverMore:hover, .DiscoverMore:focus {
+  .button-style:hover, .button-style:focus {
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgb(0, 0, 0, 1);
     background-color: rgba(210, 210, 210, 0.8)
   }
-  
-  .DiscoverMore:active {
-    background-color: #F0F0F1;
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-    color: rgba(0, 0, 0, 0.65);
-    transform: translateY(0);
+
+  .discover-more{
+    background-color: #393939;
+    color: white;
   }
 
-.OrderNow {
-    align-items: center;
-    background-color: rgb(255, 31, 31);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: rgba(255, 255, 255, 0.85);
-    cursor: pointer;
-    display: inline-flex;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bolder;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0 15px;
-    min-height: 2.5rem;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    width: 200px;
-}
-
-  .OrderNow:hover,.OrderNow:focus {
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(255, 255, 255, 0.85);
-    background-color: rgba(255, 31, 31, 0.65);
-}
-
-  .OrderNow:active {
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(255, 255, 255, 0.85);
-    background-color: rgba(0, 0, 0, 0.8);
-    transform: translateY(0);
-}
-
+  .discover-more:hover, .discover-more:focus{
+    background-color: rgba(122, 122, 122, 0.8);
+    color: white;
+  }
 
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -492,6 +454,7 @@ a{
     background-color: #181818;
     display: block;
     color: white;
+    overflow-y: scroll;
 }
 
 .containerBottom-header{
