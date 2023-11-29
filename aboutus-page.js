@@ -16,16 +16,15 @@ logo.addEventListener("mouseenter",() =>{
 
 // Menu Button --------------------------------------------------------------
 const sidebar = document.querySelector('.sidebar');
+const menuIcon = document.getElementById("menu-icon");
 
 function showSidebar(){
     sidebar.style.display = 'flex';
-    // contentBottom.style.display = 'none';
 }
 
 function hideSidebar(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
-    // contentBottom.style.display = 'Write your code here';
 }
 // --------------------------------------------------------------
 
@@ -58,7 +57,7 @@ window.addEventListener("mousemove",(e)=>{
 const navigation = document.querySelector(".navigation");
 const backgroundClip = document.querySelector(".background-clip")
 const backgroundClipOptions = {
-    rootMargin: "-90px 0px 0px 0px"
+    rootMargin: "-200px 0px 0px 0px"
 };
 
 const backgroundClipObserver = new IntersectionObserver(function(
@@ -68,13 +67,14 @@ const backgroundClipObserver = new IntersectionObserver(function(
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             logo.src = "Media/LogoFinal(black).png";
-            menu.fillStyle = "black";
+            menuIcon.style.fill = "black";
             status_logo = false;
             header.style.backgroundColor = "rgba(255,255,255,.9)";
         } else{
             logo.src = "Media/LogoFinal(white).png";
             status_logo = true;
             header.style.backgroundColor = "transparent";
+            menuIcon.style.fill = "white";
         }
     });
 },

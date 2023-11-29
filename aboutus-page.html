@@ -17,7 +17,7 @@
             </span>
             <!-- Only for mobile view to appear -->
             <div class="menu">  
-                <a href=# onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                <a href=# onclick=showSidebar()><svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
             </div>
             <div class="navigation-dropdown">
                 <div id="blankspace_logo"></div>
@@ -30,7 +30,7 @@
                             <p><b>Home</b></p>
                         </div>
                     </a>
-                    <a href="discovermore-page.html">
+                    <a href="vehicles-page.html">
                     <div class="navigation-container">
                         <img src="Media/VehicleIcon.jpg" width="130" height="100">
                         <p><b>Vehicles</b></p>
@@ -56,7 +56,6 @@
                     </a>
                 </div>
                 <div class="social-media">
-                    <a>Contact Us</a>
                     <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
                     <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
                     <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
@@ -68,6 +67,7 @@
                 <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
                 <li><a href="index.html" class="links">Home</a></li>
                 <li><a href="vehicle-page.html" class="links">Vehicles</a></li>
+                <li><a href="testdrive-page.html" class="links">Test-Drive</a></li>
                 <li><a href="location-page.html" class="links">Location</a></li>
                 <li><a href="aboutus-page.html" class="links">About Us</a></li>
             </ul>
@@ -78,7 +78,9 @@
         <video autoplay loop muted plays-inline class="background-clip">
             <source src="Media/NP Corporate Video 2022.mp4" type="video/mp4">
         </video>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M245-400q-51-64-78-141t-27-159q0-27 3-54t9-54l-70 70-42-42 140-140 140 140-42 42-65-64q-7 25-10 50.5t-3 51.5q0 70 22.5 135.5T288-443l-43 43Zm413 273q-23 8-46.5 7.5T566-131L304-253l18-40q10-20 28-32.5t40-14.5l68-5-112-307q-6-16 1-30.5t23-20.5q16-6 30.5 1t20.5 23l148 407-100 7 131 61q7 3 15 3.5t15-1.5l157-57q31-11 45-41.5t3-61.5l-55-150q-6-16 1-30.5t23-20.5q16-6 30.5 1t20.5 23l55 150q23 63-4.5 122.5T815-184l-157 57Zm-90-265-54-151q-6-16 1-30.5t23-20.5q16-6 30.5 1t20.5 23l55 150-76 28Zm113-41-41-113q-6-16 1-30.5t23-20.5q16-6 30.5 1t20.5 23l41 112-75 28Zm8 78Z"/></svg>
+        <div class="down">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="M480-83 240-323l56-56 184 183 184-183 56 56L480-83Zm0-238L240-561l56-56 184 183 184-183 56 56-240 240Zm0-238L240-799l56-56 184 183 184-183 56 56-240 240Z"/></svg>
+        </div>
     </div>
     <div class="ourStory-container">
         <p id="ourStory-title">OUR STORY</p>

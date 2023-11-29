@@ -222,26 +222,6 @@ a{
         margin-right: 30px;
         font-size: 18px;
     }
-
-    .social-media a:link{
-        color: black;
-        background-color: transparent;
-        text-decoration: none;
-        cursor: pointer;
-    }
-      
-    .social-media a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-    }
-    
-    .social-media a:hover {
-    color: black;
-    font-weight: bold;
-    background-color: transparent;
-    text-decoration: underline;
-    }
     
     .social-media img{
         max-width: 30px;
@@ -262,7 +242,7 @@ a{
 }
 
 .location-container{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: grid;
     align-items: center;

@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  ::-webkit-scrollbar-corner{
+    border-radius: 10px;
+  }
+
+/* Navigation styling -----------------------------------------------------------*/
+
+.navigation{
+    width: 100%;
+    z-index: 1000;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 8px;
+    transition: all .6s ease-in(0,0,.4,.2);
+    z-index: 0;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+.logo {
+    width: 100%;
+    padding: 20px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.logo img{
+    cursor: pointer;
+}
+
+@media (max-width: 480px){
+    .menu {
+        position:absolute;
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        transition: all 2s ease ;
+        font-size: 45px;
+        cursor:pointer;
+        transition: 0.2s;
+        z-index: 999;
+    }
+
+    .menu a svg{
+        fill:black;
+    }
+
+    nav ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav li{
+        height: 50px;
+    }
+
+    .links{
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+    
+    nav li:first-child{
+        margin-right: auto;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.01);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .sidebar li{
+        width: 100%;
+    }
+
+    .close{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+        z-index: 999;
+    }
+
+    .close span{
+        margin: auto 0;
+        padding-left: 30px;
+    }
+
+    .close svg{
+        margin: auto 0;
+        margin-right: 20px;
+    }
+    
+    /*Removing navigation dropdown from logo*/
+    .navigation-dropdown{
+        display: none;
+    }
+}
+
+@media (min-width: 480px){
+    .menu {
+        display:none;
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .navigation-dropdown{
+        z-index: 998;
+        top: 0;
+        width: 100%;
+        position:fixed;
+        overflow:hidden;
+        text-align: center;
+        max-height: 0;
+        transition: max-height 0.6s ease-out;
+        background-color: #fcfcfc;
+    }
+    
+    .navigation-flex{
+        display: flex;
+        justify-content: center;
+        column-gap: 4%;
+        padding-top: 40px;
+        margin: 0 10px;
+    }
+
+    .navigation-flex a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .navigation-flex a:hover {
+        color:#747474; 
+        text-decoration:none; 
+        cursor:pointer;  
+    }
+    
+    .navigation-container{
+        font-size: 20px;
+        color: black;
+    }
+
+    .navigation-container img{
+        object-fit: contain;
+        max-width: 130px;
+        margin-bottom: 10px;
+    }
+
+    .social-media{
+        display: flex;
+        column-gap: 15px;
+        justify-content: right;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 30px;
+        font-size: 18px;
+    }
+    
+    .social-media img{
+        max-width: 30px;
+        width: 100%;
+        max-height: 30px;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+/* Styling of test-drive container ------------------------------------------------------------------------ */
+.blanknav-space{
+    width: 100%;
+    height: 90px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-size: 2.3rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.main-container{
+    min-height: auto;
+    height: 100%;
+    background: white;
+    z-index: 1;
+}
+
+.body-container{
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    height: 100%;
+    margin: 75px auto;
+}
+
+button{
+    padding:10px 20px;
+    font-size: 18px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s;
+}
+
+.filter_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+button.active{
+    background: #181818;
+    color: white;
+}
+
+button.active:hover{
+    background: #181818;
+}
+
+.card_body button{
+    margin-top: 15px;
+    background: #181818;
+    color: white;
+}
+
+.card_body button:hover{
+    margin-top: 15px;
+    background: rgba(24, 24, 24,0.6);
+}
+
+.filterable_cards{
+    display: flex;
+    margin: 10px 0px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    flex-grow: 1;
+    flex-basis: 350px;
+    background-color: white;
+    margin: 3px; /*This causes the white stuff around the sides */
+    border-radius: 8px;
+    max-width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+    transition: all 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card.hide{
+    display: none;
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card_body{
+    padding: 15px 20px 20px;
+    text-align: center;
+}
+
+.card_title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.card_text{
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+/* Styling of footer ------------------------------------------------------------------------ */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.social-icons a:link, .footer-links a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.social-icons a:hover, .footer-links a:hover {
+    color:#747474; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.social-icons a:visited, .footer-links a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+.social-icons a:active, .footer-links a:active{
+    color: #000000;
+    text-decoration: none;
+}
+
+#footer-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.social-icons, .footer-links{
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.social-icons img{
+    max-width: 30px;
+    width: 100%;
+    max-height: 30px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.copyright{
+    font-size: 12px;
+    color: #929292
+}
+

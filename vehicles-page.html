@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="vehicles-page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Assignment 1 FED</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <span class="logo">
+                <a href="index.html"><img id="logo_img" src="Media/LogoFinal(black).png" height="70"></a>
+            </span>
+            <!-- Only for mobile view to appear -->
+            <div class="menu">  
+                <a href=# onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </div>
+            <div class="navigation-dropdown">
+                <div id="blankspace_logo"></div>
+                <!-- navigation-flex is to group all the individual navigation containers so as to be able to style them -->
+                <div class="navigation-flex">
+                    <!-- navigation-container represents each navigation link -->
+                    <a href="index.html">
+                        <div class="navigation-container">
+                            <img src="Media/IndexIcon.png" width="130" height="100">
+                            <p><b>Home</b></p>
+                        </div>
+                    </a>
+                    <a href="vehicles-page.html">
+                    <div class="navigation-container">
+                        <img src="Media/VehicleIcon.jpg" width="130" height="100">
+                        <p><b>Vehicles</b></p>
+                    </div>
+                    </a>
+                    <a href="testdrive-page.html">
+                        <div class="navigation-container">
+                            <img src="Media/Test-Drive.jpg" width="130" height="100">
+                            <p><b>Test Drive</b></p>
+                        </div>
+                        </a>
+                    <a href="location-page.html">
+                        <div class="navigation-container">
+                            <img src="Media/Location-Icon.png" width="200" height="100">
+                            <p><b>Location</b></p>
+                        </div>
+                    </a>
+                    <a href="aboutus-page.html">
+                        <div class="navigation-container">
+                            <img src="Media/AboutUs.png" width="200" height="100">
+                            <p><b>About Us</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
+                    <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li><a href="index.html" class="links">Home</a></li>
+                <li><a href="vehicle-page.html" class="links">Vehicles</a></li>
+                <li><a href="testdrive-page.html" class="links">Test-Drive</a></li>
+                <li><a href="location-page.html" class="links">Location</a></li>
+                <li><a href="aboutus-page.html" class="links">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="blanknav-space"></div>
+    <header>
+        <h1>All Models</h1>
+        <div class="filter_buttons">
+            <button class="active" data-name="all">All</button>
+            <button data-name="sports">Sports</button>
+            <button data-name="liftback">Liftback</button>
+            <button data-name="suv">SUV</button>
+        </div>
+    </header>
+    <div class="main-container">
+            <div class="body-container">
+            <div class="filterable_cards">
+                <div onclick=EvijaRedirect() class="card" data-name="sports">
+                    <img src="Media/EVIJA.jpeg" alt="EVIJA Lotus Car" />
+                    <div class="card_body">
+                        <h6 class="card_title"><b>EVIJA</b></h6>
+                        <p class="card_text">Non-Electric | Sports Car</p>
+                        <button onclick="document.location='emeya-discover.html'" class="DiscoverMore" role="button">Discover More</button>
+                    </div>
+                </div> 
+                
+                <div onclick=EmeyaRedirect() class="card" data-name="liftback">
+                    <img src="Media/EMEYA.jpeg" alt="EMEYA Lotus Car" />
+                    <div class="card_body">
+                        <h6 class="card_title"><b>EMEYA</b></h6>
+                        <p class="card_text">Electric | Liftback</p>
+                        <button onclick="document.location='emeya-discover.html'" class="DiscoverMore" role="button">Discover More</button>
+                    </div>
+                </div> 
+
+                <div onclick=EmiraRedirect() class="card" data-name="sports">
+                    <img src="Media/EMIRA.jpeg" alt="EMIRA Lotus Car" />
+                    <div class="card_body">
+                        <h6 class="card_title"><b>EMIRA</b></h6>
+                        <p class="card_text">Non-Electric | Sports Car</p>
+                        <button onclick="document.location='emeya-discover.html'" class="DiscoverMore" role="button">Discover More</button>
+                    </div>
+                </div> 
+
+                <div onclick=ElectreRedirect() class="card" data-name="suv">
+                    <img src="Media/ELECTRE.jpeg" alt="ELECTRE Lotus Car" />
+                    <div class="card_body">
+                        <h6 class="card_title"><b>ELECTRE</b></h6>
+                        <p class="card_text">Electric | SUV</p>
+                        <button onclick="document.location='emeya-discover.html'" class="DiscoverMore" role="button">Discover More</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p id="footer-title">Singapore</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
+                <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
+                <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.np.edu.sg/terms-of-use">Terms of Use</a>
+                <a href="https://www.np.edu.sg/privacy-statement">Privacy & Legal</a>
+                <p href="contact-us.html">Contact Us</p>
+            </div>
+            <p class="copyright">Copyright © 2023 Ngee Ann Polytechnic</p>
+            <p class="copyright">All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="vehicles-page.js"></script>
+</body>
+</html>

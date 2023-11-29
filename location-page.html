@@ -10,69 +10,71 @@
     <title>Assignment 1 FED</title>
 </head>
 <body>
-    <div class="navigation">
-        <div class="header">
-            <span class="logo">
-                <a href="index.html"><img id="logo_img" src="Media/LogoFinal(white).png" height="70"></a>
-            </span>
-            <!-- Only for mobile view to appear -->
-            <div class="menu">  
-                <a href=# onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
-            </div>
-            <div class="navigation-dropdown">
-                <div id="blankspace_logo"></div>
-                <!-- navigation-flex is to group all the individual navigation containers so as to be able to style them -->
-                <div class="navigation-flex">
-                    <!-- navigation-container represents each navigation link -->
-                    <a href="index.html">
+    <header>
+        <div class="navigation">
+            <div class="header">
+                <span class="logo">
+                    <a href="index.html"><img id="logo_img" src="Media/LogoFinal(white).png" height="70"></a>
+                </span>
+                <!-- Only for mobile view to appear -->
+                <div class="menu">  
+                    <a href=# onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                </div>
+                <div class="navigation-dropdown">
+                    <div id="blankspace_logo"></div>
+                    <!-- navigation-flex is to group all the individual navigation containers so as to be able to style them -->
+                    <div class="navigation-flex">
+                        <!-- navigation-container represents each navigation link -->
+                        <a href="index.html">
+                            <div class="navigation-container">
+                                <img src="Media/IndexIcon.png" width="130" height="100">
+                                <p><b>Home</b></p>
+                            </div>
+                        </a>
+                        <a href="vehicles-page.html">
                         <div class="navigation-container">
-                            <img src="Media/IndexIcon.png" width="130" height="100">
-                            <p><b>Home</b></p>
-                        </div>
-                    </a>
-                    <a href="discovermore-page.html">
-                    <div class="navigation-container">
-                        <img src="Media/VehicleIcon.jpg" width="130" height="100">
-                        <p><b>Vehicles</b></p>
-                    </div>
-                    </a>
-                    <a href="testdrive-page.html">
-                        <div class="navigation-container">
-                            <img src="Media/Test-Drive.jpg" width="130" height="100">
-                            <p><b>Test Drive</b></p>
+                            <img src="Media/VehicleIcon.jpg" width="130" height="100">
+                            <p><b>Vehicles</b></p>
                         </div>
                         </a>
-                    <a href="location-page.html">
-                        <div class="navigation-container">
-                            <img src="Media/Location-Icon.png" width="200" height="100">
-                            <p><b>Location</b></p>
-                        </div>
-                    </a>
-                    <a href="aboutus-page.html">
-                        <div class="navigation-container">
-                            <img src="Media/AboutUs.png" width="200" height="100">
-                            <p><b>About Us</b></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="social-media">
-                    <a>Contact Us</a>
-                    <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
-                    <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
-                    <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+                        <a href="testdrive-page.html">
+                            <div class="navigation-container">
+                                <img src="Media/Test-Drive.jpg" width="130" height="100">
+                                <p><b>Test Drive</b></p>
+                            </div>
+                            </a>
+                        <a href="location-page.html">
+                            <div class="navigation-container">
+                                <img src="Media/Location-Icon.png" width="200" height="100">
+                                <p><b>Location</b></p>
+                            </div>
+                        </a>
+                        <a href="aboutus-page.html">
+                            <div class="navigation-container">
+                                <img src="Media/AboutUs.png" width="200" height="100">
+                                <p><b>About Us</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
+                        <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
+                        <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+                    </div>
                 </div>
             </div>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                    <li><a href="index.html" class="links">Home</a></li>
+                    <li><a href="vehicle-page.html" class="links">Vehicles</a></li>
+                    <li><a href="testdrive-page.html" class="links">Test-Drive</a></li>
+                    <li><a href="location-page.html" class="links">Location</a></li>
+                    <li><a href="aboutus-page.html" class="links">About Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="sidebar">
-                <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                <li><a href="index.html" class="links">Home</a></li>
-                <li><a href="vehicle-page.html" class="links">Vehicles</a></li>
-                <li><a href="location-page.html" class="links">Location</a></li>
-                <li><a href="aboutus-page.html" class="links">About Us</a></li>
-            </ul>
-        </nav>
-    </div>
+    </header>
     <div class="blankspace"></div>
     <div class="location-container">
         <div class="contact-in">
@@ -82,10 +84,11 @@
             <div class="contact-form">
                 <h1>Contact Us</h1>
                 <form>
-                    <input type="text" placeholder="First Name" class="contact-form-text" />
-                    <input type="text" placeholder="Email" class="contact-form-text"/>
-                    <textarea placeholder="Message..." class="contact-form-textarea"></textarea>
-                    <input type="Submit" class="contact-form-button" />
+                    <input id="first-name" name="first-name" type="text" placeholder="First Name" class="contact-form-text" required />
+                    <input id="Last-name" name="last-name" type="text" placeholder="last Name" class="contact-form-text" required />
+                    <input id="email" name="email" type="email" placeholder="Email" class="contact-form-text" required />
+                    <textarea id="additional-messages" name="additional-messages" placeholder="Message..." class="contact-form-textarea"></textarea>
+                    <input id="submit" type="Submit" class="contact-form-button" />
                 </form>
             </div>
         </div>

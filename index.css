@@ -232,26 +232,6 @@ a{
         margin-right: 30px;
         font-size: 18px;
     }
-
-    .social-media a:link{
-        color: black;
-        background-color: transparent;
-        text-decoration: none;
-        cursor: pointer;
-    }
-      
-    .social-media a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-    }
-    
-    .social-media a:hover {
-    color: black;
-    font-weight: bold;
-    background-color: transparent;
-    text-decoration: underline;
-    }
     
     .social-media img{
         max-width: 30px;
@@ -269,7 +249,6 @@ a{
 .containerTop {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
     z-index:-5;
 }
 
