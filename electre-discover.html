@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="discover-page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Assignment 1 FED</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <span class="logo">
+                <a href="index.html"><img id="logo_img" src="Media/LogoFinal(white).png" height="70"></a>
+            </span>
+            <!-- Only for mobile view to appear -->
+            <div class="menu">  
+                <a href=# onclick=showSidebar()><svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </div>
+            <div class="navigation-dropdown">
+                <div id="blankspace_logo"></div>
+                <!-- navigation-flex is to group all the individual navigation containers so as to be able to style them -->
+                <div class="navigation-flex">
+                    <!-- navigation-container represents each navigation link -->
+                    <a href="index.html">
+                        <div class="navigation-container">
+                            <img src="Media/IndexIcon.png" width="130" height="100">
+                            <p><b>Home</b></p>
+                        </div>
+                    </a>
+                    <a href="vehicles-page.html">
+                    <div class="navigation-container">
+                        <img src="Media/VehicleIcon.jpg" width="130" height="100">
+                        <p><b>Vehicles</b></p>
+                    </div>
+                    </a>
+                    <a href="testdrive-page.html">
+                        <div class="navigation-container">
+                            <img src="Media/Test-Drive.jpg" width="130" height="100">
+                            <p><b>Test Drive</b></p>
+                        </div>
+                        </a>
+                    <a href="location-page.html">
+                        <div class="navigation-container">
+                            <img src="Media/Location-Icon.png" width="200" height="100">
+                            <p><b>Location</b></p>
+                        </div>
+                    </a>
+                    <a href="aboutus-page.html">
+                        <div class="navigation-container">
+                            <img src="Media/AboutUs.png" width="200" height="100">
+                            <p><b>About Us</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
+                    <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li><a href="index.html" class="links">Home</a></li>
+                <li><a href="vehicles-page.html" class="links">Vehicles</a></li>
+                <li><a href="testdrive-page.html" class="links">Test-Drive</a></li>
+                <li><a href="location-page.html" class="links">Location</a></li>
+                <li><a href="aboutus-page.html" class="links">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="containerVideo">
+        <!-- Background video Loop-->
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="Media/ELECTRE/Background-Clip.mp4" type="video/mp4">
+        </video>
+        <div class="stat-container">
+            <div class="stat-flex">
+                <div class="stat">
+                    <p id="stat-information">600km</p>
+                    <p id="stat-title">Electric Range</p>
+                </div>
+                <div class="stat">
+                    <p id="stat-information">517hp</p>
+                    <p id="stat-title">Horse Power</p>
+                </div>
+                <div class="stat">
+                    <p id="stat-information">18.2 kWh/100km</p>
+                    <p id="stat-title">Energy Consumption</p>
+                </div>
+                <div class="stat">
+                    <p id="stat-information">29min</p>
+                    <p id="stat-title">Fast Charge</p>
+                </div>
+            </div>
+            <div class="buttonSection">
+                <button onclick="document.location='location-page.html'" class="button-style find-dealer" role="button">Find Dealer</button>
+                <button onclick="document.location='testdrive-electreform.html'" class="button-style test-drive" role="button">Test Drive</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="slider-container">
+        <div class="slider-header">
+            <h2 id="car-model">ELECTRE</h2>
+            <p id="car-type">SUV Electric</p>
+        </div>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="Media/ELECTRE/original.jpeg" alt="original-color">
+                <img id="slide-2" src="Media/ELECTRE/yellow.jpeg" alt="yellow-color">
+                <img id="slide-3" src="Media/ELECTRE/silver.jpeg" alt="silver-color">
+                <img id="slide-4" src="Media/ELECTRE/black.jpeg" alt="black-color">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <a id='white' href="#slide-1"></a>
+            <a id='yellow' href="#slide-2"></a>
+            <a id='silver' href="#slide-3"></a>
+            <a id='black' href="#slide-4"></a>
+        </div>
+    </section>
+
+
+    <section class="interior-container">
+        <h2>Explore Interior</h2>
+        <img src="Media/ELECTRE/interior.jpeg" alt="interior picture">
+    </section>
+
+    <section class="specifications">
+        <h2>Overview Specifications</h2>
+        <div class="information-container">
+            <div class="flex-information">
+                <div class="information">
+                    <p id="title-information">Seats</p>
+                    <p id="content-information">5</p>
+                </div>
+                <div class="information">
+                    <p id="title-information">Head room front / rear</p>
+                    <p id="content-information">1030 mm / 994 mm</p>
+                </div>
+                <div class="information">
+                    <p id="title-information">Cargo Capacity</p>
+                    <p id="content-information">419 Litres</p>
+                </div>
+                <div class="information">
+                    <p id="title-information">Length</p>
+                    <p id="content-information">4440mm</p>
+                </div>
+                <div class="information">
+                    <p id="title-information">Width</p>
+                    <p id="content-information">1863 mm</p>
+                </div>
+                <div class="information">
+                    <p id="title-information">Height</p>
+                    <p id="content-information">1647 mm</p>
+                </div>
+                <div class="information">
+                    <p id="title-information">Max. towing capacity</p>
+                    <p id="content-information">1800 kg</p>
+                </div>
+                <div class="information">
+                    <p id="title-information">Wheels</p>
+                    <p id="content-information">18" / 19"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p id="footer-title">Singapore</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
+                <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
+                <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.np.edu.sg/terms-of-use">Terms of Use</a>
+                <a href="https://www.np.edu.sg/privacy-statement">Privacy & Legal</a>
+                <a href="location-page.html">Contact Us</a>
+            </div>
+            <p class="copyright">Copyright © 2023 Ngee Ann Polytechnic</p>
+            <p class="copyright">All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="discover-page.js"></script>
+</body>
+</html>

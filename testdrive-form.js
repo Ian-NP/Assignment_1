@@ -14,7 +14,7 @@ logo.addEventListener("mouseenter",() =>{
 })
 
 
-// Menu Button --------------------------------------------------------------
+// Mobile Menu Button Functions --------------------------------------------------------------
 const sidebar = document.querySelector('.sidebar');
 const mainContainer = document.querySelector(".main-container")
 
@@ -26,9 +26,9 @@ function hideSidebar(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
 }
-// --------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------
 
-// Changing Logo to white when mouse hovers over logo
+// Logo Change on Hover -------------------------------------------------------------------------
 function changeLogoWhite(){
     logo.src = "Media/LogoFinal(white).png";
 }
@@ -42,4 +42,4 @@ window.addEventListener("mousemove",(e)=>{
     }
 })
 
-// --------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------

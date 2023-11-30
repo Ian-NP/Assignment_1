@@ -264,7 +264,7 @@ a{
     position: relative;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 80%;
+    top: 85%;
     text-align: center;
     color: white;
 }
@@ -295,7 +295,7 @@ a{
     font-weight: 600;
     justify-content: center;
     line-height: 1.25;
-    margin: 0 15px;
+    margin: 0 30px;
     min-height: 2.5rem;
     padding: 0;
     position: relative;
