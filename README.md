@@ -1,6 +1,4 @@
-# Assignment_1
-
-# CarCompany Website Documentation and Research
+# Assignment_1 Website Documentation and Research
 
 ## I. Introduction
 Welcome to the CarCompany website, a platform designed to cater to the needs of individuals seeking to explore and purchase cars, as well as car enthusiasts eager to delve into the world of automobiles. This documentation outlines the key aspects of the website, including its purpose, goals, and features aimed at providing valuable information to our users.
