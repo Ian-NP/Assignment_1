@@ -49,7 +49,6 @@ window.addEventListener("mousemove",(e)=>{
 const filterButtons = document.querySelectorAll(".filter_buttons button");
 const filterableCards = document.querySelectorAll(".filterable_cards .card");
 
-console.log(filterButtons,filterableCards);
 
 const filterCards = (e) => {
     document.querySelector(".active").classList.remove("active");

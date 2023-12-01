@@ -1,3 +1,5 @@
+// Navigation Javascript -----------------------------------------------------------------------
+
 const logo = document.getElementById("logo_img");
 const menu = document.getElementsByClassName("menu")[0];
 const dropdown = document.getElementsByClassName("navigation-dropdown")[0];
@@ -14,27 +16,19 @@ logo.addEventListener("mouseenter",() =>{
 
 // Menu Button --------------------------------------------------------------
 const sidebar = document.querySelector('.sidebar');
-const contentTop = document.querySelector('.contentTop');
-const contentMiddle = document.querySelector('.contentMiddle');
-// const contentBottom = document.querySelector('.contentBottom');
+const menuIcon = document.getElementById("menu-icon");
 
 function showSidebar(){
     sidebar.style.display = 'flex';
-    contentTop.style.display = 'none';
-    contentMiddle.style.display = 'none';
-    // contentBottom.style.display = 'none';
 }
 
 function hideSidebar(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
-    contentTop.style.display = 'block';
-    contentMiddle.style.display = 'block';
-    // contentBottom.style.display = 'Write your code here';
 }
-// --------------------------------------------------------------
+// -----------------------------------------------------------------------------
 
-
+// Changing logo to white when dropdown occurs ---------------------------------
 function changeLogoWhite(){
     logo.src = "Media/LogoFinal(white).png";
 }
@@ -57,111 +51,18 @@ window.addEventListener("mousemove",(e)=>{
     }
 })
 
+// -----------------------------------------------------------------------------
 
-// To make logo change to black after scrolling down a certain point 
-// const navigation = document.querySelector(".navigation");
-// const backgroundClip = document.querySelector(".background-clip")
-// const backgroundClipOptions = {
-//     rootMargin: "-300px 0px 0px 0px"
-// };
+// Changing slider-nav anchor links background color when selected ---------------------------------
+const sliderNavItems = document.querySelectorAll(".slider-nav");
 
-// const backgroundClipObserver = new IntersectionObserver(function(
-//     entries, 
-//     backgroundClipObserver
-// ) {
-//     entries.forEach(entry => {
-//         if (!entry.isIntersecting) {
-//             logo.src = "Media/LogoFinal(white).png";
-//             status_logo = false;
-//         } else{
-//             logo.src = "Media/LogoFinal(black).png";
-//             status_logo = true;
-//         }
-//     });
-// },
-// backgroundClipOptions);
-
-// backgroundClipObserver.observe(backgroundClip)
-
-
-// Might delete----------------------------------------------------------------------------------------
-// const containerBottom = document.querySelector(".containerBottom")
-// const containerMiddle = document.querySelector(".containerMiddle")
-// const overallContainer = document.querySelector(".overallContainer")
-// const footer = document.getElementsByTagName("footer");
-
-
-// // If user touches or mouse over containerBottom, scroll-snap-type will be disabled;
-// containerBottom.addEventListener("mouseenter",() =>{
-//     overallContainer.style.scrollSnapType = "none";
-//     console.log("SNAPPING STOPPED!");
-// })
-// containerBottom.addEventListener("touchmove",() =>{
-//     overallContainer.style.scrollSnapType = "none";
-//     console.log("SNAPPING STOPPED!");
-// })
-
-// // If user touches or mouse over containerMiddle, scroll-snap-type will be enabled;
-// containerBottom.addEventListener("mouseleave",() =>{
-//     if (containerBottom.addEventListener("mouseenter", () =>{return true})){
-//         ;
-//     }
-//     else{
-//         overallContainer.style.scrollSnapType = "y mandatory";
-//         console.log("SNAPPING ENABLED!");
-//     }
-// })
-// containerBottom.addEventListener("touchmove",() =>{
-//     overallContainer.style.scrollSnapType = "y mandatory";
-//     console.log("SNAPPING ENABLED!");
-// })
-//--------------------------------------------------------------------------------
-
-
-// 
-let touchstartX = 0;
-let touchendX = 0;
-let currenthref = 1;
-
-function checkDirection() {
-  if (touchendX < touchstartX && currenthref < 4){
-    //left
-currenthref += 1
-}
-  if (touchendX > touchstartX && currenthref > 1){
-currenthref -= 1}
-
-window.location.href = `#slide-${currenthref}`;
+const activateNavItem = (e) => {
+    const activeElement = document.querySelector(".active");
+    
+    if (activeElement) {
+        activeElement.classList.remove("active");
+    }
+    e.target.classList.add("active");
 }
 
-var bb = document.getElementsByClassName("slider")[0];
-
-bb.addEventListener("touchstart", (e) => {
-  touchstartX = e.changedTouches[0].screenX;
-});
-
-bb.addEventListener("touchend", (e) => {
-  touchendX = e.changedTouches[0].screenX;
-  checkDirection();
-});
-
-bb.addEventListener("mousedown", (e) => {
-    console.log("down")
-    touchstartX = e.clientX;
-  });
-  
-bb.addEventListener("mouseup", (e) => {
-    console.log("up")
-    touchendX = e.clientX;
-    checkDirection();
-});
-
-//set auto scroll (incomplete code)
-// window.location.href = "#slide-1"
-
-// function autochange(){
-//     window.location.href = `#slide-${currenthref}`;
-//     setTimeout(autochange,1000)
-// }
-
-
+sliderNavItems.forEach(sliderNavItem => sliderNavItem.addEventListener("click", activateNavItem));

@@ -50,33 +50,3 @@ window.addEventListener("mousemove",(e)=>{
         setTimeout(()=>{mouseStatus = true;},600)
     }
 })
-
-// --------------------------------------------------------------------------------------------------------
-// To make logo change to black after scrolling down a certain point 
-// const navigation = document.querySelector(".navigation");
-// const backgroundClip = document.querySelector(".background-clip")
-// const backgroundClipOptions = {
-//     rootMargin: "-200px 0px 0px 0px"
-// };
-
-// const backgroundClipObserver = new IntersectionObserver(function(
-//     entries, 
-//     backgroundClipObserver
-// ) {
-//     entries.forEach(entry => {
-//         if (!entry.isIntersecting) {
-//             logo.src = "Media/LogoFinal(black).png";
-//             menuIcon.style.fill = "black";
-//             status_logo = false;
-//             header.style.backgroundColor = "rgba(255,255,255,.9)";
-//         } else{
-//             logo.src = "Media/LogoFinal(white).png";
-//             status_logo = true;
-//             header.style.backgroundColor = "transparent";
-//             menuIcon.style.fill = "white";
-//         }
-//     });
-// },
-// backgroundClipOptions);
-
-// backgroundClipObserver.observe(backgroundClip);
