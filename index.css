@@ -463,20 +463,20 @@ a{
 .cartype-container {
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Ensures equal height for flex items */
+    align-items: stretch; 
     margin: 20px 0px;
     flex-flow: wrap row;
 }
 
 .cartype-box {
-    flex: 1; /* Distributes available space equally among flex items */
+    flex: 1; 
     max-width: 350px;
     background-color: #ffffff;
     border: 1px solid rgb(200, 200, 200);
     border-radius: 10px;
     padding: 30px;
     margin: 20px;
-    box-sizing: border-box; /* Includes padding and border in the box's total width and height */
+    box-sizing: border-box; 
     cursor: pointer;
     transition: 0.3s;
 }
@@ -491,7 +491,7 @@ a{
 }
 
 #cartype-img img {
-    max-width: 100%; /* Ensures images do not exceed the container width */
+    max-width: 100%; 
     height: auto;
     object-fit: cover;
     object-position: center;
@@ -637,7 +637,7 @@ a{
 
 @media (max-width: 767px) {
     .specifications {
-        margin: 40px; /* Adjust the margin as needed */
+        margin: 40px; 
     }
 
     .specifications h2{
@@ -653,11 +653,11 @@ a{
     }
 
     #title-information {
-        font-size: 1.2em; /* Adjust the font size as needed */
+        font-size: 1.2em; 
     }
 
     #content-information {
-        font-size: 1.2em; /* Adjust the font size as needed */
+        font-size: 1.2em; 
     }
 }
 
