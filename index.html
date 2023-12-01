@@ -13,7 +13,7 @@
     <div class="navigation">
         <div class="header">
             <span class="logo">
-                <a href="index.html"><img id="logo_img" src="Media/LogoFinal(white).png" height="70"></a>
+                <a href="index.html"><img id="logo_img" src="Media/LogoFinal(white).png" height="70" alt="Logo of the website"></a>
             </span>
             <!-- Only for mobile view to appear -->
             <div class="menu">  
@@ -26,45 +26,45 @@
                     <!-- navigation-container represents each navigation link -->
                     <a href="index.html">
                         <div class="navigation-container">
-                            <img src="Media/IndexIcon.png" width="130" height="100">
+                            <img alt="IndexIcon" src="Media/IndexIcon.png" width="130" height="100">
                             <p><b>Home</b></p>
                         </div>
                     </a>
                     <a href="vehicles-page.html">
                     <div class="navigation-container">
-                        <img src="Media/VehicleIcon.jpg" width="130" height="100">
+                        <img alt="VehicleIcon" src="Media/VehicleIcon.jpg" width="130" height="100">
                         <p><b>Vehicles</b></p>
                     </div>
                     </a>
                     <a href="testdrive-page.html">
                         <div class="navigation-container">
-                            <img src="Media/Test-Drive.jpg" width="130" height="100">
+                            <img alt="Test-drive-Icon" src="Media/Test-Drive.jpg" width="130" height="100">
                             <p><b>Test Drive</b></p>
                         </div>
                         </a>
                     <a href="location-page.html">
                         <div class="navigation-container">
-                            <img src="Media/Location-Icon.png" width="200" height="100">
+                            <img alt="location-icon" src="Media/Location-Icon.png" width="200" height="100">
                             <p><b>Location</b></p>
                         </div>
                     </a>
                     <a href="aboutus-page.html">
                         <div class="navigation-container">
-                            <img src="Media/AboutUs.png" width="200" height="100">
+                            <img alt="aboutus-icon" src="Media/AboutUs.png" width="200" height="100">
                             <p><b>About Us</b></p>
                         </div>
                     </a>
                 </div>
                 <div class="social-media">
-                    <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
-                    <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
-                    <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+                    <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="Twitter"></a>
                 </div>
             </div>
         </div>
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li onclick=hideSidebar() class="close"><span><img alt="Logo menu" id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
                 <li><a href="index.html" class="links">Home</a></li>
                 <li><a href="vehicles-page.html" class="links">Vehicles</a></li>
                 <li><a href="testdrive-page.html" class="links">Test-Drive</a></li>
@@ -74,7 +74,7 @@
         </nav>
     </div>
 
-<!-- Container Top/Video ----------------------------------------------------------------------------------------------------------->
+    <!-- Container Top/Video ----------------------------------------------------------------------------------------------------------->
     <div class="containerVideo">
         <!-- Background video Loop-->
         <video autoplay loop muted plays-inline class="background-clip">
@@ -89,8 +89,7 @@
         </div>
     </div>
 
-
-<!-- Container Middle/Slider ---------------------------------------------------------------------------------------------->
+    <!-- Container Middle/Slider ---------------------------------------------------------------------------------------------->
     <section class="slider-container">
         <div class="slider-header">
             <h2 id="car-model">Latest Releases</h2>
@@ -98,17 +97,17 @@
         </div>
         <div class="slider-wrapper">
             <div class="slider">
-                <img id="slide-1" src="Media/evija.png" alt="original-color">
-                <img id="slide-2" src="Media/emeya.png" alt="yellow-color">
-                <img id="slide-3" src="Media/emira.png" alt="silver-color">
-                <img id="slide-4" src="Media/eletre.png" alt="black-color">
+                <img id="slide-1" src="Media/evija.png" alt="Evija - Original Color">
+                <img id="slide-2" src="Media/emeya.png" alt="Emeya - Yellow Color">
+                <img id="slide-3" src="Media/emira.png" alt="Emira - Silver Color">
+                <img id="slide-4" src="Media/eletre.png" alt="Eletre - Black Color">
             </div>
         </div>
         <div class="slider-nav">
             <a href="#slide-1"></a> <!--Evija-->
             <a href="#slide-2"></a> <!--Emeya-->
             <a href="#slide-3"></a> <!--Emira-->
-            <a  href="#slide-4"></a> <!--Electre-->
+            <a href="#slide-4"></a> <!--Electre-->
         </div>
         <div class="button-slider">
             <button onclick="document.location='vehicles-page.html'" id="discovermore-link" class="button-style find-dealer" role="button">Discover More</button>
@@ -116,11 +115,8 @@
         </div>
     </section>
 
-<!-------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!-- Container Bottom  ----------------------------------------------------------------------------------------------------------->    
-<div class="containerBottom" onclick="document.location='vehicles-page.html'">
+    <!-- Container Bottom  ----------------------------------------------------------------------------------------------------------->
+    <div class="containerBottom" onclick="document.location='vehicles-page.html'">
         <div class="containerBottom-header">
             <h1>Car Types</h1>
             <p>Learn about car types to find the right one for you.</p>
@@ -130,7 +126,7 @@
             <!-- Sports Car Type Information -->
             <article class="cartype-box">
                 <div id="cartype-img">
-                    <img src="Media/Slide1.png" alt="sports car-type">
+                    <img src="Media/Slide1.png" alt="Sports Car Type">
                 </div>
                 <div class="cartype-content">
                     <a href="vehicles-page.html" id="cartype-title">Sports Car type</a>
@@ -141,30 +137,26 @@
                     </a>
                 </div>
             </article>
-            
-    
-    
+
             <!-- Liftback Car Type Information -->
             <article class="cartype-box">
                 <div id="cartype-img">
-                    <img src="Media/Slide2.png" alt="liftback car-type" width="414" height="244">
+                    <img src="Media/Slide2.png" alt="Liftback Car Type" width="414" height="244">
                 </div>
                 <div class="cartype-content">
                     <a href="vehicles-page.html" id="cartype-title">Liftback Car Type</a>
-                    <p>
-                        Liftback cars appeal to urban commuters, active individuals, and small families for their practicality. Popular among budget and eco-conscious consumers, they offer a stylish balance with spacious cargo areas and modern technology.</p>
+                    <p>Liftback cars appeal to urban commuters, active individuals, and small families for their practicality. Popular among budget and eco-conscious consumers, they offer a stylish balance with spacious cargo areas and modern technology.</p>
                     <a href="vehicles-page.html" id="explore-more">
                         Explore More
                         <img src="Media/right arrow icon.png" width='10' id="right-arrow">
                     </a>
                 </div>
             </article>
-    
-    
+
             <!-- SUV Car Type Information -->
             <article class="cartype-box">
                 <div id="cartype-img">
-                    <img src="Media/Slide4.png" alt="SUV car-type">
+                    <img src="Media/Slide4.png" alt="SUV Car Type">
                 </div>
                 <div class="cartype-content">
                     <a href="vehicles-page.html" id="cartype-title">SUV Car Type</a>
@@ -177,15 +169,14 @@
             </article>
         </section>
     </div>
-    
 
     <footer>
         <div class="footer-container">
             <p id="footer-title">Singapore</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
-                <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
-                <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
+                <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="Twitter"></a>
             </div>
             <div class="footer-links">
                 <a href="https://www.np.edu.sg/terms-of-use">Terms of Use</a>

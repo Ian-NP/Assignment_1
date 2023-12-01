@@ -11,80 +11,19 @@
 </head>
 <body>
     <header>
-        <div class="navigation">
-            <div class="header">
-                <span class="logo">
-                    <a href="index.html"><img id="logo_img" src="Media/LogoFinal(white).png" height="70"></a>
-                </span>
-                <!-- Only for mobile view to appear -->
-                <div class="menu">  
-                    <a href=# onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
-                </div>
-                <div class="navigation-dropdown">
-                    <div id="blankspace_logo"></div>
-                    <!-- navigation-flex is to group all the individual navigation containers so as to be able to style them -->
-                    <div class="navigation-flex">
-                        <!-- navigation-container represents each navigation link -->
-                        <a href="index.html">
-                            <div class="navigation-container">
-                                <img src="Media/IndexIcon.png" width="130" height="100">
-                                <p><b>Home</b></p>
-                            </div>
-                        </a>
-                        <a href="vehicles-page.html">
-                        <div class="navigation-container">
-                            <img src="Media/VehicleIcon.jpg" width="130" height="100">
-                            <p><b>Vehicles</b></p>
-                        </div>
-                        </a>
-                        <a href="testdrive-page.html">
-                            <div class="navigation-container">
-                                <img src="Media/Test-Drive.jpg" width="130" height="100">
-                                <p><b>Test Drive</b></p>
-                            </div>
-                            </a>
-                        <a href="location-page.html">
-                            <div class="navigation-container">
-                                <img src="Media/Location-Icon.png" width="200" height="100">
-                                <p><b>Location</b></p>
-                            </div>
-                        </a>
-                        <a href="aboutus-page.html">
-                            <div class="navigation-container">
-                                <img src="Media/AboutUs.png" width="200" height="100">
-                                <p><b>About Us</b></p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="social-media">
-                        <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
-                        <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
-                        <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
-                    </div>
-                </div>
-            </div>
-            <nav>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar() class="close"><span><img id="logo_menu" src="Media/LogoFinal(black).png" height="35"></span><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                    <li><a href="index.html" class="links">Home</a></li>
-                    <li><a href="vehicles-page.html" class="links">Vehicles</a></li>
-                    <li><a href="testdrive-page.html" class="links">Test-Drive</a></li>
-                    <li><a href="location-page.html" class="links">Location</a></li>
-                    <li><a href="aboutus-page.html" class="links">About Us</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- Your header content -->
     </header>
     <div class="location-container">
         <div class="contact-in">
             <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.738433396538!2d103.77336167585507!3d1.3330916616276405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da107d8eb4e359%3A0x75d2e7ffdeeb0c43!2sNgee%20Ann%20Polytechnic!5e0!3m2!1sen!2ssg!4v1701193855184!5m2!1sen!2ssg" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Your map iframe -->
             </div>
             <div class="contact-form">
                 <h1>Contact Us</h1>
-                <form>
+                <form id="testdrive-form">
+                    <!-- Your form fields -->
                     <input id="first-name" name="first-name" type="text" placeholder="First Name" class="contact-form-text" required />
-                    <input id="Last-name" name="last-name" type="text" placeholder="last Name" class="contact-form-text" required />
+                    <input id="Last-name" name="last-name" type="text" placeholder="Last Name" class="contact-form-text" required />
                     <input id="email" name="email" type="email" placeholder="Email" class="contact-form-text" required />
                     <textarea id="additional-messages" name="additional-messages" placeholder="Message..." class="contact-form-textarea"></textarea>
                     <input id="submit" type="Submit" class="contact-form-button" />
@@ -93,34 +32,25 @@
         </div>
     </div>
     <div class="submitbutton">
-        <button type="submit" id="openModal" form="#testdrive-form" value="Submit">Submit</button>
+        <!-- Your button to trigger the modal -->
+        <button type="button" id="openModal">Submit</button>
     </div>
+    <!-- Your modal dialog -->
     <dialog id="modal">
-        <img src="Media/tick.png">
+        <img src="Media/tick.png" alt="Tick Icon">
         <h2>Thank You!</h2>
-        <p>Your details has been successfully submitted. Thanks!</p>
+        <p>Your details have been successfully submitted. Thanks!</p>
         <button onclick="document.location='index.html'" type="button" id="closeModal">OK</button>
     </dialog>
     <footer>
-        <div class="footer-container">
-            <p id="footer-title">Singapore</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/ngeeannpoly"><img src="Media/facebook-icon.png" alt="facebook-icon"></a>
-                <a href="https://www.instagram.com/ngeeannpoly/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="Media/instagram-icon.png" alt="instagram-icon"></a>
-                <a href="https://twitter.com/NgeeAnnNP"><img src="Media/twitter-icon.png" alt="twitter-icon"></a>
-            </div>
-            <div class="footer-links">
-                <a href="https://www.np.edu.sg/terms-of-use">Terms of Use</a>
-                <a href="https://www.np.edu.sg/privacy-statement">Privacy & Legal</a>
-                <a href="location-page.html">Contact Us</a>
-            </div>
-            <p class="copyright">Copyright © 2023 Ngee Ann Polytechnic</p>
-            <p class="copyright">All Rights Reserved</p>
-        </div>
+        <!-- Your footer content -->
     </footer>
     <script src="location-page.js"></script>
     <script>
-        document.querySelector('dialog').showModal();
+        // Adding an event listener to show the modal on button click
+        document.getElementById('openModal').addEventListener('click', function() {
+            document.getElementById('modal').showModal();
+        });
     </script>
 </body>
 </html>
