@@ -485,12 +485,12 @@ a{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#cartype-img {
+.cartype-img {
     width: 100%;
     height: auto;
 }
 
-#cartype-img img {
+.cartype-img img {
     max-width: 100%; 
     height: auto;
     object-fit: cover;
@@ -504,7 +504,7 @@ a{
     text-align: center;
 }
 
-#cartype-title {
+.cartype-title {
     font-size: 1.3rem;
     font-weight: 500;
     font-weight: bold;
@@ -519,12 +519,12 @@ a{
     overflow-y: hidden;
 }
 
-#explore-more {
+.explore-more {
     font-weight: bold;
     color: rgba(24,24,24,1);
 }
 
-#explore-more:hover {
+.explore-more:hover {
     color: rgba(24,24,24,0.5);
     transition: all ease-in 0.2s;
 }
