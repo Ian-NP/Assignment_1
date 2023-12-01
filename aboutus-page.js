@@ -13,6 +13,7 @@ logo.addEventListener("mouseenter",() =>{
     dropdown.style.maxHeight = dropdown.scrollHeight + "px";
 })
 
+// --------------------------------------------------------------
 
 // Menu Button --------------------------------------------------------------
 const sidebar = document.querySelector('.sidebar');
