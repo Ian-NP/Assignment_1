@@ -1,29 +1,55 @@
 # Assignment_1
 
-# CarCompany Website
+# CarCompany Website Documentation and Research
 
-Welcome to the CarCompany website! This README.md file provides an overview of the website, its purpose, and the value it delivers to its users.
+## I. Introduction
+Welcome to the CarCompany website, a platform designed to cater to the needs of individuals seeking to explore and purchase cars, as well as car enthusiasts eager to delve into the world of automobiles. This documentation outlines the key aspects of the website, including its purpose, goals, and features aimed at providing valuable information to our users.
 
-## User Audience and Intent
+## II. User Audience and Intent
+### A. User Audience
+- Definition of the target audience: People looking to purchase a car or car enthusiasts.
+- Identification of user needs: Information on car models, specifications, store locations, and test drive applications.
 
-### User Audience:
-This website is designed for individuals who are actively seeking to purchase a car or are car enthusiasts interested in exploring the offerings of our car company. Whether you're looking for detailed specifications of different car models, information about our store locations, or want to schedule a test drive, this website caters to your needs.
+### B. Purpose of the Website
+1. Car Information
+   - Details about various car models.
+   - Specifications, features, and pricing information.
 
-### Purpose of the Website:
-1. **Car Information:** Get comprehensive details about the various cars we offer, including specifications, features, and pricing.
-2. **Store Locator:** Easily find the location of our stores to explore our cars in person and engage with our knowledgeable staff.
-3. **Test Drive Application:** Fill out a convenient online form to schedule a test drive and experience our cars firsthand.
+2. Store Locator
+   - Conveniently find store locations.
+   - Enhance in-person exploration of cars.
 
-## Value for Users
+3. Test Drive Application
+   - Online form for scheduling test drives.
+   - Facilitate firsthand experience with the cars.
 
-Our website provides immense value to users by offering:
+## III. Value for Users
+1. Detailed Car Information
+   - Empower users with in-depth knowledge for informed decisions.
 
-1. **Detailed Car Information:** Access in-depth information about each car model, empowering users to make informed decisions based on their preferences and needs.
+2. Store Location Information
+   - Improve user experience by providing store location details.
 
-2. **Store Location Information:** Conveniently locate our stores, enhancing the overall user experience and encouraging in-person visits.
+3. Test Drive Application
+   - Streamlined and user-friendly for convenient scheduling.
 
-3. **Test Drive Application:** Streamlined and user-friendly, the online test drive application form makes it easy for users to schedule a test drive at their convenience.
+## IV. External Source Code Attribution
+- Confirmation that no external source code has been used.
+- Clarification on proprietary nature of the code.
 
-## External Source Code Attribution
+## V. Potential Features
+1. Virtual Test Drives
+2. Augmented Reality Car Customization
+3. Comparative Analysis Tool
+4. User Reviews and Ratings
+5. Live Chat Support
+6. Car Financing Calculator
+7. Augmented Reality Showroom
+8. Car Maintenance Tracker
+9. Interactive Car Configurator
+10. AI-Powered Recommendations
+11. Community Forums and Events
+12. AR Navigation to Nearest Dealership
 
-No external source code has been used in the development of this website. All code is proprietary and tailored specifically for the CarCompany website.
+## VI. Conclusion
+- Summary of key findings and decisions made based on the documentation and research.
