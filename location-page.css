@@ -337,6 +337,76 @@ a{
 }
 
 /* ------------------------------------------------------------------------------------------- */
+.submitbutton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+#openModal{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #181818;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#openModal:hover{
+    background-color: rgba(24,24,24,0.5);
+}
+
+#modal{
+    max-width: 400px;
+    width: 100%;
+    max-height: 350;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 80px 30px 30px;
+    background: white;
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#modal::backdrop{
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+#modal img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#modal h2{
+    font-size: 38px;
+    font-weight: 500px;
+    margin: 30px 0 10px;
+}
+
+#closeModal {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #181818;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
 
 /* Styling of footer */
 footer{

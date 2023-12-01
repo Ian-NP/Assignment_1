@@ -82,7 +82,7 @@
             </div>
             <div class="contact-form">
                 <h1>Contact Us</h1>
-                <form action="location-submittedpage.html">
+                <form>
                     <input id="first-name" name="first-name" type="text" placeholder="First Name" class="contact-form-text" required />
                     <input id="Last-name" name="last-name" type="text" placeholder="last Name" class="contact-form-text" required />
                     <input id="email" name="email" type="email" placeholder="Email" class="contact-form-text" required />
@@ -92,6 +92,15 @@
             </div>
         </div>
     </div>
+    <div class="submitbutton">
+        <button type="submit" id="openModal" form="#testdrive-form" value="Submit">Submit</button>
+    </div>
+    <dialog id="modal">
+        <img src="Media/tick.png">
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted. Thanks!</p>
+        <button onclick="document.location='index.html'" type="button" id="closeModal">OK</button>
+    </dialog>
     <footer>
         <div class="footer-container">
             <p id="footer-title">Singapore</p>
@@ -110,5 +119,8 @@
         </div>
     </footer>
     <script src="location-page.js"></script>
+    <script>
+        document.querySelector('dialog').showModal();
+    </script>
 </body>
 </html>
