@@ -27,7 +27,7 @@ function hideSidebar(){
 }
 // --------------------------------------------------------------
 
-
+// Changing Logo to white when hovering over logo
 function changeLogoWhite(){
     logo.src = "Media/LogoFinal(white).png";
 }

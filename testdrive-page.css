@@ -318,7 +318,7 @@ button.active:hover{
     flex-grow: 1;
     flex-basis: 350px;
     background-color: white;
-    margin: 3px; /*This causes the white stuff around the sides */
+    margin: 3px;
     border-radius: 8px;
     max-width: 400px;
     border: 1px solid rgba(0, 0, 0, 0.2);
