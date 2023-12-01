@@ -283,6 +283,7 @@ a{
 #stat-information{
     font-size: 1.4rem;
     font-weight: bold;
+    overflow-y: hidden;
 }
 
 .button-style {
